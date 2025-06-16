@@ -256,7 +256,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     int value = board[row][col];
                     return Container(
                       decoration: BoxDecoration(
-                        color: value == 0 ? Colors.grey[300] : Colors.orange[100 * (value.toRadixString(2).length % 9)],
+                        color: value == 0
+                            ? Colors.grey[300]
+                            : Colors.orange[100 * (value.toRadixString(2).length % 9)],
                         borderRadius: BorderRadius.circular(8),
                       ),
                       alignment: Alignment.center,
